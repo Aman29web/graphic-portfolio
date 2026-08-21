@@ -1,0 +1,21 @@
+{
+  "name": "shubh-singh-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Full-stack graphic designer portfolio — React frontend, Node/Express + MongoDB backend, fully editable from /admin",
+  "scripts": {
+    "setup": "npm run install:server && npm run install:client && npm run seed",
+    "install:server": "npm --prefix server install",
+    "install:client": "npm --prefix client install",
+    "seed": "npm --prefix server run seed",
+    "seed:fresh": "npm --prefix server run seed:fresh",
+    "dev": "concurrently -n API,WEB -c magenta,cyan \"npm --prefix server run dev\" \"npm --prefix client run dev\"",
+    "dev:server": "npm --prefix server run dev",
+    "dev:client": "npm --prefix client run dev",
+    "build": "npm --prefix client run build",
+    "start": "npm --prefix server start"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.1"
+  }
+}
