@@ -1,7 +1,10 @@
 import axios from 'axios';
 
+// A trailing slash pasted into the host's env var would produce "/api//projects".
+const baseURL = (import.meta.env.VITE_API_URL || '/api').trim().replace(/\/+$/, '');
+
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || '/api',
+  baseURL,
   timeout: 20000,
 });
 
