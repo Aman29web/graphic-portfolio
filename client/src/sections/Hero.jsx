@@ -118,7 +118,8 @@ export default function Hero({ onScrollTo }) {
               animate={{ y: [0, i % 2 ? 10 : -10, 0] }}
               transition={{ duration: 6 + i, repeat: Infinity, ease: 'easeInOut' }}
             >
-              <SmartImage src={src} alt={`Selected work ${i + 1}`} style={{ aspectRatio: '3 / 4', width: '100%' }} />
+              {/* Sizing lives in CSS so the wide third tile can differ on desktop */}
+              <SmartImage src={src} alt={`Selected work ${i + 1}`} className="hero-shot" />
             </motion.div>
           ))}
         </motion.div>

@@ -132,9 +132,10 @@ export const settingsSchema = [
         label: 'Heading font',
         type: 'select',
         options: [
-          { value: "'Syne', sans-serif", label: 'Syne (bold & designerly)' },
-          { value: "'Space Grotesk', sans-serif", label: 'Space Grotesk' },
-          { value: "'Inter', sans-serif", label: 'Inter' },
+          { value: "'Fraunces', Georgia, serif", label: 'Fraunces (soft & characterful)' },
+          { value: "'Plus Jakarta Sans', sans-serif", label: 'Plus Jakarta Sans (clean)' },
+          { value: "'Caveat', cursive", label: 'Caveat (handwritten)' },
+          { value: "'Syne', sans-serif", label: 'Syne (bold & graphic)' },
         ],
       },
       {
@@ -142,8 +143,8 @@ export const settingsSchema = [
         label: 'Body font',
         type: 'select',
         options: [
-          { value: "'Space Grotesk', sans-serif", label: 'Space Grotesk' },
-          { value: "'Inter', sans-serif", label: 'Inter' },
+          { value: "'Plus Jakarta Sans', system-ui, sans-serif", label: 'Plus Jakarta Sans' },
+          { value: "'Fraunces', Georgia, serif", label: 'Fraunces' },
           { value: "'Syne', sans-serif", label: 'Syne' },
         ],
       },
